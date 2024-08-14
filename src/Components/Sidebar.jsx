@@ -2,7 +2,6 @@ import { useState } from "react";
 import { GrLogout } from "react-icons/gr";
 import { FcSettings } from "react-icons/fc";
 import { AiOutlineBars } from "react-icons/ai";
-import { BsFillHouseAddFill, BsGraphUp } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 // import useAuth from '../../../hooks/useAuth'
 import { Link } from "react-router-dom";
@@ -13,6 +12,7 @@ import { GoBook } from "react-icons/go";
 import { FiDollarSign } from "react-icons/fi";
 import { GiProgression } from "react-icons/gi";
 import { BiSolidDashboard } from "react-icons/bi";
+import { BsGraphUp } from "react-icons/bs";
 
 const Sidebar = () => {
   //   const { logOut } = useAuth()
