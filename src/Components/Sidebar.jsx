@@ -8,6 +8,11 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { MdHomeWork } from "react-icons/md";
 import logo from "../assets/logo.png";
+import { LuGraduationCap } from "react-icons/lu";
+import { GoBook } from "react-icons/go";
+import { FiDollarSign } from "react-icons/fi";
+import { GiProgression } from "react-icons/gi";
+import { BiSolidDashboard } from "react-icons/bi";
 
 const Sidebar = () => {
   //   const { logOut } = useAuth()
@@ -55,7 +60,7 @@ const Sidebar = () => {
               <Link to="/">
                 <img
                   // className='hidden md:block'
-                                  src={ logo}
+                  src={logo}
                   alt="logo"
                   width="200"
                   height="100"
@@ -75,11 +80,11 @@ const Sidebar = () => {
                 to="/overview"
                 className={({ isActive }) =>
                   `flex items-center px-4 py-2 my-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
-                    isActive ? "bg-gray-300  text-gray-700" : "text-gray-600"
+                    isActive ? " text-[#6C72FF] border-l-4 border-[#6C72FF] " : "text-gray-600"
                   }`
                 }
               >
-                <BsGraphUp className="w-5 h-5" />
+                <BiSolidDashboard className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">Overview</span>
               </NavLink>
@@ -93,7 +98,7 @@ const Sidebar = () => {
                   }`
                 }
               >
-                <BsFillHouseAddFill className="w-5 h-5" />
+                <GoBook className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">My Course</span>
               </NavLink>
@@ -106,7 +111,7 @@ const Sidebar = () => {
                   }`
                 }
               >
-                <MdHomeWork className="w-5 h-5" />
+                <LuGraduationCap className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">Completed</span>
               </NavLink>
@@ -130,7 +135,7 @@ const Sidebar = () => {
                   }`
                 }
               >
-                <MdHomeWork className="w-5 h-5" />
+                <FiDollarSign className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">Transactions</span>
               </NavLink>
@@ -142,7 +147,7 @@ const Sidebar = () => {
                   }`
                 }
               >
-                <MdHomeWork className="w-5 h-5" />
+                <GiProgression className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">Reports</span>
               </NavLink>
@@ -154,7 +159,7 @@ const Sidebar = () => {
                   }`
                 }
               >
-                <MdHomeWork className="w-5 h-5" />
+                <BsGraphUp className="w-5 h-5" />
 
                 <span className="mx-4 font-medium">Statistics</span>
               </NavLink>
@@ -174,17 +179,17 @@ const Sidebar = () => {
               }`
             }
           >
-            <FcSettings className="w-5 h-5" />
+            <GrLogout className="w-5 h-5" />
 
-            <span className="mx-4 font-medium">Profile</span>
+            <span className="mx-4 font-medium">Support</span>
           </NavLink>
           <button
             // onClick={logOut}
             className="flex w-full items-center px-4 py-2 mt-5 text-gray-600 hover:bg-gray-300   hover:text-gray-700 transition-colors duration-300 transform"
           >
-            <GrLogout className="w-5 h-5" />
+            <FcSettings className="w-5 h-5" />
 
-            <span className="mx-4 font-medium">Logout</span>
+            <span className="mx-4 font-medium">Setting</span>
           </button>
         </div>
       </div>
