@@ -3,7 +3,7 @@ import Dashboard from "../Layouts/Dashboard";
 import Overview from "../Components/Overview";
 export const router = createBrowserRouter([
   {
-    path: "/overview",
+    path: "/",
     element: <Dashboard />,
     children: [
       {
